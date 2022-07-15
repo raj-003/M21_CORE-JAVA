@@ -8,7 +8,7 @@ public class A {
     	{ System.out.println("Constructor called"); }
     }
 
-/*class B{
+class B{
     public static void main(String[] args)
     {
         A a = new A();
@@ -16,4 +16,4 @@ public class A {
         System.out.println(a.name);
         System.out.println(a.num);
     }
-}*/
+}
