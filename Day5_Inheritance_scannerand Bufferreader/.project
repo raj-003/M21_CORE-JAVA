@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Assignment1</name>
+	<name>Day5_Inheritance_scannerand Bufferreader</name>
 	<comment></comment>
 	<projects>
-		<project>Day1-GitHub</project>
-		<project>Day-2-intro-to-java</project>
-		<project>Day3_Intro_To_OOP</project>
-		<project>Day4_Encapsulation_And_Abstraction</project>
-		<project>Day5_Inheritance_scannerand Bufferreader</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
