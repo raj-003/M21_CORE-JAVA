@@ -1,7 +1,5 @@
 package com.cg.pyramid;
-
 public class Pyramid{
-
 	public static void Traingle(int n)
 	{
 		for (int i=0;i<n;i++) {
@@ -9,13 +7,13 @@ public class Pyramid{
 			System.out.print(" ");
 		}
 		for(int j=0;j<=i;j++) {
-			System.out.print("  * ");
+			System.out.print(" * ");
 		}
 		System.out.println();
 		}
 	}
 	public static void main(String[] args) {
-		int n=5;
+		int n=4;
 		Traingle(n);
 	}
 
