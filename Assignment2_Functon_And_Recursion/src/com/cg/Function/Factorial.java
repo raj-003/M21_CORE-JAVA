@@ -18,7 +18,7 @@ public class Factorial {
 		int n=s.nextInt();
 		System.out.print("Result is :");
 		
-		System.out.println(factorial(n));
+		System.out.println(factorial(+n));
 		s.close();
 	}
 	
