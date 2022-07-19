@@ -3,7 +3,7 @@ package com.cg.finalclass;
 class speed{
  final int speedlimit=100;
 	void run() {
-		speedlimit=400;
+	//	speedlimit=400;
 	}
 }
 public class final_class_variable {
