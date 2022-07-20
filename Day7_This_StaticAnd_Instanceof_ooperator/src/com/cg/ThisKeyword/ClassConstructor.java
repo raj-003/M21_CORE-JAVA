@@ -13,7 +13,7 @@ public class ClassConstructor {
 
 	public static void main(String[] args) {
 		ClassConstructor a= new ClassConstructor();
-	
+	a.ClassConstructor(10);
 	}
 
 }
