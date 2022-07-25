@@ -1,6 +1,6 @@
-package com.cg.Strings;
+package com.cg.strings;
 
-public class Example3 {
+public class Ex3 {
 
 	public static void main(String[] args) {
 		String str = "hello";

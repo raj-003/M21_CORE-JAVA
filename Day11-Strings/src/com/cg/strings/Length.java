@@ -1,4 +1,4 @@
-package com.cg.Strings;
+package com.cg.strings;
 
 import java.util.Scanner;
 

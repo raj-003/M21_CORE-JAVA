@@ -1,8 +1,8 @@
-package com.cg.Strings;
+package com.cg.strings;
 
 import java.util.Scanner;
 
-public class Example4 {
+public class Ex4 {
 
 	public static void main(String[] args) {
 		String str="Dhoni";

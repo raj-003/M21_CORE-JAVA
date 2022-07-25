@@ -1,8 +1,8 @@
-package com.cg.Strings;
+package com.cg.strings;
 
 import java.util.StringTokenizer;
 
-public class Example5 {
+public class Ex5 {
 
 	public static void main(String[] args) {
 		StringTokenizer st=new StringTokenizer("Hi I am Good");
