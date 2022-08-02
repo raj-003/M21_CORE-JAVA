@@ -35,7 +35,7 @@ public class DBConnect {
 	catch(SQLException e) {
 	
 		System.out.println("Invalid");
-		System.out.println("raj");
+		e.printStackTrace();
 		
 		}
 
