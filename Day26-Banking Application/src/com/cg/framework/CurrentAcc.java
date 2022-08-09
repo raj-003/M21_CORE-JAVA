@@ -1,20 +1,38 @@
 package com.cg.framework;
 
-public abstract class CurrentAcc extends BankAcc {
-	private boolean creditLimit;
-//constructor
-	public CurrentAcc(int accNo, String accNm, float accbal) {
-		super(accNo, accNm, accbal);
+public abstract class CurrentAcc extends BankAcc
+{
+	private final float creditLimit;
+	public CurrentAcc(int accNo, String accNm, float accBal,float creditLimit) {
+		super(accNo, accNm, accBal);
 		this.creditLimit=creditLimit;
+		}
+	public void withdraw(float amount) 
+	{
+		float accBal=this.getAccBal();
+		 if(amount<=creditLimit) 
+		 {
+			if(amount<accBal) 
+			{
+				accBal-=amount;
+				this.setAccBal(accBal);
+				System.out.println("The Account Name is: "+this.getAccNm()+", Withdrawled Amount is : "+amount+", Account Balance is : "+accBal);
+				
+			}
+			else 
+			{
+				System.out.println("enter the amount less then account balence");
+			}
+			
+		}
+		else 
+		{
+			System.out.println("enter the amount  with in credit limit value");
+		}
 	}
-	//method
-		public void withdraw (float Minbal) {
-			System.out.println("Account no is:"+this.getAccNo()+"Account name is :"+this.getAccNm()+
-					"Balance is :"+Minbal);
-		}
-		@Override
-		public String toString() {
-			return String.format("CurrentAcc [creditLimit=%s]", creditLimit);
-		}
-		
+	@Override
+	public String toString() {
+		return String.format("CurrentAcc [creditLimit=%s]", creditLimit);
+	}
+
 }

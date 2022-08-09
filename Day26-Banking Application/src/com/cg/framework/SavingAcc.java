@@ -1,20 +1,19 @@
 package com.cg.framework;
 
-public abstract class SavingAcc extends BankAcc {
-private final float isSalaried;
-	public SavingAcc(int accNo, String accNm, float accbal, float isSalaried) {
-		super(accNo, accNm, accbal);
-		// TODO Auto-generated constructor stub
-		this.isSalaried=isSalaried;
+public abstract class SavingAcc extends BankAcc 
+{
+	private boolean isSalay;
+	public SavingAcc(int accNo, String accNm, float accBal,boolean isSalary) {
+		super(accNo, accNm, accBal);
+		this.isSalay=isSalary;
 	}
-	//providing implementation to abstract method of bank account here //Saving account
-	public void withdraw(float Minbal) {
-		System.out.println("Account no is:"+this.getAccNo()+"Account name is :"+this.getAccNm()+
-				"Balance is :"+getAccbal());
+	public void withdraw(float charges)
+	{
+		System.out.println("Account no. is : "+this.getAccNo()+", Account Name is : "+this.getAccNm()+ ", Account Balance is "+this.getAccBal());
 	}
 	@Override
 	public String toString() {
-		return String.format("SavingAcc [isSalaried=%s]", isSalaried);
+		return String.format("SavingAcc [isSalay=%s]", isSalay);
 	}
 	
 }

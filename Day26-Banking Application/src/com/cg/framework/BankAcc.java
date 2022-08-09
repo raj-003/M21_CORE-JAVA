@@ -1,26 +1,29 @@
 package com.cg.framework;
 
 public abstract class BankAcc {
-	private int AccNo;
+
+	private int accNo;
 	private String accNm;
-	private float accbal;
-//constructor
-	public BankAcc(int accNo, String accNm, float accbal) {
+	private float accBal;
+	//constructor
+	public BankAcc(int accNo, String accNm, float accBal) {
 		super();
-		AccNo = accNo;
+		this.accNo = accNo;
 		this.accNm = accNm;
-		this.accbal = accbal;
+		this.accBal = accBal;
 	}
+	//getters and setters method for private variable
 	public int getAccNo() {
-		return AccNo;
+		return accNo;
 	}
-	//abstract method
-	abstract public void withdraw(float Minbal);
-	public void deposit(float Minbal) {
-		System.out.println(Minbal);
-	}
+	//method withdraw
+		abstract public void withdraw(float accBal);
+		 public void deposit(float accBal)
+		 {
+			 System.out.println(accBal);
+		 }
 	public void setAccNo(int accNo) {
-		AccNo = accNo;
+		this.accNo = accNo;
 	}
 	public String getAccNm() {
 		return accNm;
@@ -28,16 +31,14 @@ public abstract class BankAcc {
 	public void setAccNm(String accNm) {
 		this.accNm = accNm;
 	}
-	public float getAccbal() {
-		return accbal;
+	public float getAccBal() {
+		return accBal;
 	}
-	public void setAccbal(float accbal) {
-		this.accbal = accbal;
+	public void setAccBal(float accBal) {
+		this.accBal = accBal;
 	}
-	//toString
 	@Override
 	public String toString() {
-		return String.format("BankAcc [AccNo=%s, accNm=%s, accbal=%s]", AccNo, accNm, accbal);
+		return String.format("BankAcc [accNo=%s, accNm=%s, accBal=%s]", accNo, accNm, accBal);
 	}
-	
 }
