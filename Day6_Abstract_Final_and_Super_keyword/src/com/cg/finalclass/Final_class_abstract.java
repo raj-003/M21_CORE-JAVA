@@ -4,7 +4,7 @@ package com.cg.finalclass;
 	abstract void display();
 }
 
- class apple extends fruit{
+ final class apple extends fruit{
 	 void display() {
 		 System.out.println("apple is sweet");
 	 }
