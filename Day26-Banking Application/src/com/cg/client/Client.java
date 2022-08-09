@@ -17,12 +17,10 @@ public class Client {
 		System.out.println("Saving Account");
 		System.out.println("Balance of Saving Account is:"+s.getAccBal());
 		System.out.println(s);
-		
 		System.out.println();
 		System.out.println("Current Account");
 		System.out.println("Balance of Current Account is:"+c.getAccBal());
 		c.withdraw(50000);
-		System.out.println(s);
 		System.out.println(c);
 	}
 }
