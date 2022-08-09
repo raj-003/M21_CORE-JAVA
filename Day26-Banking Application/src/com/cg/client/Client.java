@@ -15,11 +15,8 @@ public class Client {
 		CurrentAcc c = new MMCurrentAcc(345," RAJ ",100000,50000);
 		
 		System.out.println("Saving Account");
-		System.out.println(s);
 		System.out.println("Balance of Saving Account is:"+s.getAccBal());
-		s.withdraw(1000);
-		System.out.println("Balance after withdrawl amount is :"+s.getAccBal());
-	
+		System.out.println(s);
 		
 		System.out.println();
 		System.out.println("Current Account");
