@@ -2,10 +2,10 @@ package com.cg.framework;
 
 public abstract class SavingAcc extends BankAcc 
 {
-	private boolean isSalay;
-	public SavingAcc(int accNo, String accNm, float accBal,boolean isSalary) {
+	private boolean isSalaried;
+	public SavingAcc(int accNo, String accNm, float accBal,boolean isSalaried) {
 		super(accNo, accNm, accBal);
-		this.isSalay=isSalary;
+		this.isSalaried=isSalaried;
 	}
 	public void withdraw(float charges)
 	{
@@ -13,7 +13,7 @@ public abstract class SavingAcc extends BankAcc
 	}
 	@Override
 	public String toString() {
-		return String.format("SavingAcc [isSalay=%s]", isSalay);
+		return String.format("SavingAcc [isSalaried=%s]", isSalaried);
 	}
 	
 }

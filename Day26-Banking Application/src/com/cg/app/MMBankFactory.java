@@ -7,7 +7,7 @@ import com.cg.framework.SavingAcc;
 public class MMBankFactory extends BankFactory{
 
 	@Override
-	public SavingAcc getNewSavingAccount(int AccNo, String accNm, float accBal, boolean isSalary) {
+	public SavingAcc getNewSavingAccount(int AccNo, String accNm, float accBal, boolean isSalaried) {
 		// TODO Auto-generated method stub
 		return null;
 	}
